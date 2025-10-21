@@ -1,0 +1,143 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled6.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/katabasis-wolds/katabasis./blob/main/Untitled6.ipynb-ejercicos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tNF8X9SUUGDq"
+      },
+      "source": [],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "haHtzMTeUAHf"
+      },
+      "source": [
+        "class Producto:\n",
+        "  def __init__(self, codigo=\"\",descripcion=\"\",precio=0.0,stock=0):\n",
+        "    self.codigo=codigo\n",
+        "    self.descripcion=descripcion\n",
+        "    self.precio=precio\n",
+        "    self.stock=stock\n",
+        "  #Metodo sin retorno\n",
+        "  def asigna_precio(self):\n",
+        "    print(\"debe asignar precio\")\n",
+        "\n",
+        "  #Metodo con parametro pero sin retorno\n",
+        "  def asigna_descripcion(self, des: str):\n",
+        "    self.descipcion = des\n",
+        "    print(\"La nueva descripcion es:\",self.descripcion)\n",
+        "\n",
+        "  #Programa principal\n",
+        "  if __name__ == \"__main__\":\n",
+        "    prod1 = producto() #Instanciamos\n",
+        "    prod1.asignar_descripcion(\"Lavadora 146kg\")\n",
+        "    prod1.asignar_precio()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ejky4IbNUKRF",
+        "outputId": "285a0a4c-808f-47cc-d74f-f5cf6e8d3b56",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 63
+        }
+      },
+      "source": [
+        "import tensorflow as tf"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<p style=\"color: red;\">\n",
+              "The default version of TensorFlow in Colab will soon switch to TensorFlow 2.x.<br>\n",
+              "We recommend you <a href=\"https://www.tensorflow.org/guide/migrate\" target=\"_blank\">upgrade</a> now \n",
+              "or ensure your notebook will continue to use TensorFlow 1.x via the <code>%tensorflow_version 1.x</code> magic:\n",
+              "<a href=\"https://colab.research.google.com/notebooks/tensorflow_version.ipynb\" target=\"_blank\">more info</a>.</p>\n"
+            ],
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          }
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mWJU96otUNY4"
+      },
+      "source": [
+        "from tensorflow import keras"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1LgEi-6QU9m4"
+      },
+      "source": [
+        "from tensorflow.keras import layers"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XpOkj7FrVCRH"
+      },
+      "source": [
+        "import tensorflow_datasets as tfds"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "n8IuRwROVlU0"
+      },
+      "source": [],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
